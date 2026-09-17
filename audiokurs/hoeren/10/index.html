@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Folge 10 – Raus aus dem Drama</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Beau+Rivage&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:        #F5EEDB;
+    --cream-light:  #F7F1E2;
+    --green:        #4B5832;
+    --gold:         #D4AF37;
+    --gold-antique: #886F1D;
+    --gold-dark:    #695617;
+    --gold-bright:  #EEDFB0;
+    --line:         rgba(75,88,50,0.14);
+    --line-gold:    rgba(136,111,29,0.38);
+  }
+  *{ box-sizing:border-box; }
+  html,body{ height:100%; }
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--green);
+    font-family:'Cormorant Garamond', serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    padding:40px 24px;
+  }
+
+  .shimmer-line{
+    position:fixed;
+    left:0; right:0; top:0;
+    height:3px;
+    background:linear-gradient(90deg, var(--gold-antique) 0%, var(--gold-bright) 20%, var(--gold) 50%, var(--gold-bright) 80%, var(--gold-antique) 100%);
+    background-size:200% 100%;
+    animation:shimmerMove 6s linear infinite;
+  }
+  @keyframes shimmerMove{ 0%{background-position:0% 50%;} 100%{background-position:200% 50%;} }
+  @media (prefers-reduced-motion: reduce){ .shimmer-line{ animation:none; } }
+
+  .card{
+    max-width:560px;
+    width:100%;
+    background:var(--cream-light);
+    border:1px solid var(--line-gold);
+    border-radius:8px;
+    box-shadow:0 30px 60px -30px rgba(75,88,50,0.35);
+    padding:56px 44px;
+    text-align:center;
+  }
+
+  .eyebrow{
+    font-family:'Cinzel', serif;
+    font-size:12px;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    color:var(--gold-dark);
+    margin:0 0 18px;
+  }
+
+  h1{
+    font-family:'Cinzel', serif;
+    font-weight:500;
+    font-size:clamp(24px, 4vw, 32px);
+    color:var(--green);
+    margin:0 0 8px;
+  }
+
+  .episode-count{
+    font-family:'Cinzel', serif;
+    font-size:13px;
+    letter-spacing:0.08em;
+    color:var(--gold-antique);
+    margin:0 0 34px;
+  }
+
+  .divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+    margin:0 0 34px;
+  }
+  .divider .line{
+    height:1px;
+    width:56px;
+    background:linear-gradient(90deg, transparent, var(--gold-antique), transparent);
+  }
+  .divider .dot{ width:6px; height:6px; border-radius:50%; background:var(--gold); }
+
+  .player-wrap{
+    margin:0 0 30px;
+  }
+  audio{
+    width:100%;
+    height:44px;
+  }
+  .placeholder-note{
+    font-size:16px;
+    font-style:italic;
+    color:var(--gold-antique);
+    margin:14px 0 0;
+  }
+
+  p.intro{
+    font-size:20px;
+    line-height:1.7;
+    color:rgba(75,88,50,0.88);
+    margin:0 0 8px;
+  }
+
+  nav.episode-nav{
+    margin-top:36px;
+    padding-top:28px;
+    border-top:1px solid var(--line);
+    font-family:'Cinzel', serif;
+    font-size:13px;
+    letter-spacing:0.06em;
+  }
+  nav.episode-nav a{
+    color:var(--gold-dark);
+    text-decoration:none;
+    border-bottom:1px solid var(--line-gold);
+    padding-bottom:2px;
+  }
+  nav.episode-nav a:hover{ color:var(--green); border-color:var(--gold); }
+  nav.episode-nav .sep{
+    display:block;
+    height:10px;
+  }
+</style>
+</head>
+<body>
+  <div class="shimmer-line"></div>
+
+  <div class="card">
+    <p class="eyebrow">Raus aus dem Drama &middot; Der Audiokurs</p>
+    <h1>Folge 10</h1>
+    <p class="episode-count">10 von 19</p>
+
+    <div class="divider"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+
+    <p class="intro">
+      <!-- TODO: kurzer Einleitungstext zu dieser Folge -->
+      Nimm Dir ein paar ruhige Minuten für diese Folge.
+    </p>
+
+    <div class="player-wrap">
+      <audio controls preload="none" src="/audiokurs/audio/folge-10.mp3">
+        Dein Browser unterstützt kein Audio-Element.
+      </audio>
+      <p class="placeholder-note">Audio folgt in Kürze.</p>
+    </div>
+
+    <nav class="episode-nav">
+      <a href="/audiokurs/hoeren/9">← Zur vorherigen Folge</a>
+      <span class="sep"></span>
+      <a href="/audiokurs">Zur Audiokurs-Startseite</a>
+    </nav>
+  </div>
+</body>
+</html>
