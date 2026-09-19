@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impressum – Mein Wort ist Erinnerung</title>
+<meta name="description" content="Impressum und Anbieterkennzeichnung nach § 5 DDG.">
+<link rel="stylesheet" href="/assets/fonts.css">
+<style>
+  :root{
+    --cream:        #F5EEDB;
+    --cream-light:  #F7F1E2;
+    --green:        #4B5832;
+    --gold:         #D4AF37;
+    --gold-antique: #886F1D;
+    --gold-dark:    #695617;
+    --gold-bright:  #EEDFB0;
+    --line:         rgba(75,88,50,0.14);
+    --line-gold:    rgba(136,111,29,0.38);
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--green);
+    font-family:'Cormorant Garamond', serif;
+    font-size:20px;
+    line-height:1.75;
+    padding:0 24px 90px;
+  }
+
+  .shimmer-line{
+    position:fixed;
+    left:0; right:0; top:0;
+    height:3px;
+    background:linear-gradient(90deg, var(--gold-antique) 0%, var(--gold-bright) 20%, var(--gold) 50%, var(--gold-bright) 80%, var(--gold-antique) 100%);
+    background-size:200% 100%;
+    animation:shimmerMove 6s linear infinite;
+    z-index:5;
+  }
+  @keyframes shimmerMove{ 0%{background-position:0% 50%;} 100%{background-position:200% 50%;} }
+  @media (prefers-reduced-motion: reduce){ .shimmer-line{ animation:none; } }
+
+  .wrap{ max-width:720px; margin:0 auto; }
+
+  header.page-head{
+    text-align:center;
+    padding:80px 0 0;
+  }
+  .eyebrow{
+    font-family:'Cinzel', serif;
+    font-size:12px;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    color:var(--gold-dark);
+    margin:0 0 16px;
+  }
+  h1{
+    font-family:'Cinzel', serif;
+    font-weight:500;
+    font-size:clamp(28px, 5vw, 38px);
+    color:var(--green);
+    margin:0 0 26px;
+  }
+
+  .divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+    margin:0 0 54px;
+  }
+  .divider .line{
+    height:1px;
+    width:56px;
+    background:linear-gradient(90deg, transparent, var(--gold-antique), transparent);
+  }
+  .divider .dot{ width:6px; height:6px; border-radius:50%; background:var(--gold); }
+
+  h2{
+    font-family:'Cinzel', serif;
+    font-weight:500;
+    font-size:22px;
+    color:var(--green);
+    margin:48px 0 6px;
+  }
+  h2::after{
+    content:"";
+    display:block;
+    width:54px;
+    height:1px;
+    margin-top:12px;
+    background:linear-gradient(90deg, var(--gold), transparent);
+  }
+
+  p{ margin:16px 0; }
+  address{ font-style:normal; margin:16px 0; }
+  a{ color:var(--gold-dark); text-decoration:none; border-bottom:1px solid var(--line-gold); }
+  a:hover{ color:var(--green); border-color:var(--gold); }
+
+  .todo{
+    display:inline-block;
+    background:rgba(212,175,55,0.16);
+    border:1px dashed var(--gold-antique);
+    border-radius:3px;
+    padding:1px 9px;
+    font-family:'Cinzel', serif;
+    font-size:13px;
+    letter-spacing:0.04em;
+    color:var(--gold-dark);
+  }
+
+  .note{
+    background:var(--cream-light);
+    border:1px solid var(--line-gold);
+    border-radius:6px;
+    padding:22px 26px;
+    margin:34px 0;
+    font-size:18px;
+  }
+
+  nav.page-nav{
+    max-width:720px;
+    margin:70px auto 0;
+    padding-top:28px;
+    border-top:1px solid var(--line);
+    font-family:'Cinzel', serif;
+    font-size:13px;
+    letter-spacing:0.06em;
+    text-align:center;
+  }
+  nav.page-nav a{ margin:0 14px; display:inline-block; }
+</style>
+</head>
+<body>
+  <div class="shimmer-line"></div>
+
+  <div class="wrap">
+    <header class="page-head">
+      <p class="eyebrow">Mein Wort ist Erinnerung</p>
+      <h1>Impressum</h1>
+      <div class="divider"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+    </header>
+
+    <h2>Angaben gemäß § 5 DDG</h2>
+    <address>
+      Anke Elsa Delfs<br>
+      <span class="todo">Straße und Hausnummer ergänzen</span><br>
+      <span class="todo">PLZ und Ort ergänzen</span><br>
+      Deutschland
+    </address>
+
+    <h2>Kontakt</h2>
+    <p>
+      E-Mail: <a href="mailto:info@anke.one">info@anke.one</a><br>
+      Telefon: <span class="todo">Telefonnummer ergänzen</span>
+    </p>
+
+    <h2>Umsatzsteuer</h2>
+    <p>
+      <span class="todo">Bitte wählen: USt-IdNr. angeben ODER Kleinunternehmer-Hinweis</span>
+    </p>
+    <p>
+      Falls Kleinunternehmerregelung: „Gemäß § 19 UStG wird keine Umsatzsteuer berechnet."
+    </p>
+
+    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+    <address>
+      Anke Elsa Delfs<br>
+      Anschrift wie oben
+    </address>
+
+    <h2>Streitschlichtung</h2>
+    <p>
+      Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+      Verbraucherschlichtungsstelle teilzunehmen.
+    </p>
+
+    <h2>Haftung für Inhalte</h2>
+    <p>
+      Als Diensteanbieterin bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den
+      allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als Diensteanbieterin jedoch nicht
+      verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu
+      forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+    </p>
+    <p>
+      Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen
+      bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer
+      konkreten Rechtsverletzung möglich. Bei Bekanntwerden entsprechender Rechtsverletzungen entferne ich diese
+      Inhalte umgehend.
+    </p>
+
+    <h2>Haftung für Links</h2>
+    <p>
+      Mein Angebot enthält gegebenenfalls Links zu externen Websites Dritter, auf deren Inhalte ich keinen
+      Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte
+      der verlinkten Seiten ist stets die jeweilige Anbieterin oder der jeweilige Anbieter der Seiten
+      verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße
+      überprüft; rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+    </p>
+    <p>
+      Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer
+      Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen entferne ich derartige Links
+      umgehend.
+    </p>
+
+    <h2>Urheberrecht</h2>
+    <p>
+      Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf diesen Seiten – insbesondere die Texte,
+      Bilder und die Audioaufnahmen des Audiokurses – unterliegen dem deutschen Urheberrecht. Die
+      Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des
+      Urheberrechtes bedürfen meiner schriftlichen Zustimmung.
+    </p>
+    <p>
+      Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+      Die Audioinhalte sind für die persönliche Nutzung bestimmt und dürfen nicht weitergegeben,
+      öffentlich zugänglich gemacht oder verbreitet werden.
+    </p>
+
+    <h2>Hinweis zu meiner Arbeit</h2>
+    <div class="note">
+      Meine Arbeit dient der Selbsterkenntnis und der persönlichen Entwicklung. Sie ist keine
+      psychotherapeutische Behandlung und keine medizinische Therapie und kann eine solche nicht ersetzen.
+      Bei gesundheitlichen Beschwerden wende Dich bitte an eine Ärztin, einen Arzt oder an eine
+      psychotherapeutische Fachperson.
+    </div>
+  </div>
+
+  <nav class="page-nav">
+    <a href="/">Startseite</a>
+    <a href="/audiokurs">Audiokurs</a>
+    <a href="/datenschutz">Datenschutz</a>
+  </nav>
+</body>
+</html>

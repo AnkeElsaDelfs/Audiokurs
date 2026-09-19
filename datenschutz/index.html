@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutzerklärung – Mein Wort ist Erinnerung</title>
+<meta name="description" content="Datenschutzerklärung nach DSGVO: Welche Daten auf dieser Website verarbeitet werden und welche Rechte Du hast.">
+<link rel="stylesheet" href="/assets/fonts.css">
+<style>
+  :root{
+    --cream:        #F5EEDB;
+    --cream-light:  #F7F1E2;
+    --green:        #4B5832;
+    --gold:         #D4AF37;
+    --gold-antique: #886F1D;
+    --gold-dark:    #695617;
+    --gold-bright:  #EEDFB0;
+    --line:         rgba(75,88,50,0.14);
+    --line-gold:    rgba(136,111,29,0.38);
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--green);
+    font-family:'Cormorant Garamond', serif;
+    font-size:20px;
+    line-height:1.75;
+    padding:0 24px 90px;
+  }
+
+  .shimmer-line{
+    position:fixed;
+    left:0; right:0; top:0;
+    height:3px;
+    background:linear-gradient(90deg, var(--gold-antique) 0%, var(--gold-bright) 20%, var(--gold) 50%, var(--gold-bright) 80%, var(--gold-antique) 100%);
+    background-size:200% 100%;
+    animation:shimmerMove 6s linear infinite;
+    z-index:5;
+  }
+  @keyframes shimmerMove{ 0%{background-position:0% 50%;} 100%{background-position:200% 50%;} }
+  @media (prefers-reduced-motion: reduce){ .shimmer-line{ animation:none; } }
+
+  .wrap{ max-width:720px; margin:0 auto; }
+
+  header.page-head{ text-align:center; padding:80px 0 0; }
+  .eyebrow{
+    font-family:'Cinzel', serif;
+    font-size:12px;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    color:var(--gold-dark);
+    margin:0 0 16px;
+  }
+  h1{
+    font-family:'Cinzel', serif;
+    font-weight:500;
+    font-size:clamp(26px, 4.6vw, 36px);
+    color:var(--green);
+    margin:0 0 26px;
+  }
+
+  .divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+    margin:0 0 54px;
+  }
+  .divider .line{
+    height:1px;
+    width:56px;
+    background:linear-gradient(90deg, transparent, var(--gold-antique), transparent);
+  }
+  .divider .dot{ width:6px; height:6px; border-radius:50%; background:var(--gold); }
+
+  h2{
+    font-family:'Cinzel', serif;
+    font-weight:500;
+    font-size:22px;
+    color:var(--green);
+    margin:50px 0 6px;
+  }
+  h2::after{
+    content:"";
+    display:block;
+    width:54px;
+    height:1px;
+    margin-top:12px;
+    background:linear-gradient(90deg, var(--gold), transparent);
+  }
+  h3{
+    font-family:'Cinzel', serif;
+    font-weight:500;
+    font-size:17px;
+    letter-spacing:0.04em;
+    color:var(--gold-dark);
+    margin:30px 0 4px;
+  }
+
+  p{ margin:16px 0; }
+  ul{ margin:16px 0; padding-left:24px; }
+  li{ margin:9px 0; }
+  address{ font-style:normal; margin:16px 0; }
+  a{ color:var(--gold-dark); text-decoration:none; border-bottom:1px solid var(--line-gold); }
+  a:hover{ color:var(--green); border-color:var(--gold); }
+  strong{ font-weight:600; }
+
+  .todo{
+    display:inline-block;
+    background:rgba(212,175,55,0.16);
+    border:1px dashed var(--gold-antique);
+    border-radius:3px;
+    padding:1px 9px;
+    font-family:'Cinzel', serif;
+    font-size:13px;
+    letter-spacing:0.04em;
+    color:var(--gold-dark);
+  }
+
+  .note{
+    background:var(--cream-light);
+    border:1px solid var(--line-gold);
+    border-radius:6px;
+    padding:22px 26px;
+    margin:34px 0;
+    font-size:18px;
+  }
+
+  .meta{
+    margin-top:56px;
+    padding-top:22px;
+    border-top:1px solid var(--line);
+    font-size:16px;
+    color:var(--gold-antique);
+  }
+
+  nav.page-nav{
+    max-width:720px;
+    margin:70px auto 0;
+    padding-top:28px;
+    border-top:1px solid var(--line);
+    font-family:'Cinzel', serif;
+    font-size:13px;
+    letter-spacing:0.06em;
+    text-align:center;
+  }
+  nav.page-nav a{ margin:0 14px; display:inline-block; }
+</style>
+</head>
+<body>
+  <div class="shimmer-line"></div>
+
+  <div class="wrap">
+    <header class="page-head">
+      <p class="eyebrow">Mein Wort ist Erinnerung</p>
+      <h1>Datenschutzerklärung</h1>
+      <div class="divider"><span class="line"></span><span class="dot"></span><span class="line"></span></div>
+    </header>
+
+    <div class="note">
+      Kurz vorweg: Diese Website setzt <strong>keine Cookies</strong>, nutzt <strong>keine Analyse- oder
+      Tracking-Tools</strong> und bindet <strong>keine externen Dienste</strong> in die Seiten ein. Schriftarten
+      werden lokal von diesem Server geladen. Es findet daher auch kein Profiling statt.
+    </div>
+
+    <h2>1. Verantwortliche Stelle</h2>
+    <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+    <address>
+      Anke Elsa Delfs<br>
+      <span class="todo">Straße und Hausnummer ergänzen</span><br>
+      <span class="todo">PLZ und Ort ergänzen</span><br>
+      Deutschland<br>
+      E-Mail: <a href="mailto:info@anke.one">info@anke.one</a>
+    </address>
+    <p>
+      Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen
+      über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.
+    </p>
+
+    <h2>2. Hosting</h2>
+    <h3>Netlify</h3>
+    <p>
+      Diese Website wird bei Netlify gehostet. Anbieter ist die Netlify, Inc., 512 2nd Street, Suite 200,
+      San Francisco, CA 94107, USA. Wenn Du diese Website besuchst, erfasst Netlify technisch notwendige
+      Zugriffsdaten in sogenannten Server-Logfiles:
+    </p>
+    <ul>
+      <li>IP-Adresse des anfragenden Geräts</li>
+      <li>Datum und Uhrzeit des Zugriffs</li>
+      <li>aufgerufene Seite bzw. Datei</li>
+      <li>übertragene Datenmenge und Meldung über erfolgreichen Abruf</li>
+      <li>Browsertyp und Browserversion sowie verwendetes Betriebssystem</li>
+      <li>Referrer-URL (die zuvor besuchte Seite)</li>
+    </ul>
+    <p>
+      Diese Daten sind technisch erforderlich, um die Website auszuliefern, ihre Stabilität und Sicherheit zu
+      gewährleisten und Angriffe abzuwehren. Rechtsgrundlage ist <strong>Art. 6 Abs. 1 lit. f DSGVO</strong>
+      (berechtigtes Interesse an der technisch fehlerfreien und sicheren Bereitstellung dieser Website).
+      Eine Zusammenführung dieser Daten mit anderen Datenquellen oder eine Auswertung zu Werbezwecken findet
+      nicht statt.
+    </p>
+    <p>
+      Die Verarbeitung erfolgt auch auf Servern in den USA. Netlify ist unter dem
+      <strong>EU-US Data Privacy Framework</strong> zertifiziert; ergänzend bestehen
+      Standardvertragsklauseln der EU-Kommission. Mit Netlify besteht ein Vertrag über Auftragsverarbeitung
+      nach <strong>Art. 28 DSGVO</strong>.
+    </p>
+    <p>
+      Weitere Informationen: <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener noreferrer">netlify.com/privacy</a>
+    </p>
+
+    <h2>3. SSL- bzw. TLS-Verschlüsselung</h2>
+    <p>
+      Diese Seite nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Du erkennst eine
+      verschlüsselte Verbindung daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt
+      und am Schloss-Symbol in Deiner Browserzeile. Bei aktivierter Verschlüsselung können die Daten, die Du an
+      mich übermittelst, nicht von Dritten mitgelesen werden.
+    </p>
+
+    <h2>4. Schriftarten (lokal eingebunden)</h2>
+    <p>
+      Diese Website verwendet die Schriftarten Cinzel, Cormorant Garamond und Beau Rivage.
+      Diese Schriften sind <strong>lokal auf dem Server dieser Website gespeichert</strong> und werden von dort
+      geladen. Es wird <strong>keine Verbindung zu Servern von Google</strong> oder anderen Dritten aufgebaut,
+      und es werden dabei keine Daten an Dritte übertragen.
+    </p>
+
+    <h2>5. Cookies und Einwilligungen</h2>
+    <p>
+      Diese Website setzt <strong>keine Cookies</strong> und verwendet weder Local Storage noch Session Storage,
+      um Daten auf Deinem Gerät zu speichern. Es ist daher auch kein Cookie-Banner erforderlich.
+    </p>
+
+    <h2>6. Analyse-Tools und Werbung</h2>
+    <p>
+      Auf dieser Website kommen <strong>keine Analyse-, Statistik- oder Tracking-Werkzeuge</strong> zum Einsatz
+      (also beispielsweise kein Google Analytics, kein Matomo, kein Meta-Pixel). Es findet keine Auswertung
+      Deines Nutzungsverhaltens statt.
+    </p>
+
+    <h2>7. Audioinhalte des Kurses</h2>
+    <p>
+      Die Audiodateien des Kurses werden direkt von diesem Server ausgeliefert. Es sind
+      <strong>keine externen Player</strong> eingebunden (also kein YouTube, kein Vimeo, kein Spotify und kein
+      SoundCloud). Beim Abspielen einer Folge werden daher keine Daten an Dritte übertragen; es fallen lediglich
+      die unter Punkt 2 beschriebenen Server-Logfiles an.
+    </p>
+
+    <h2>8. Kontaktaufnahme per E-Mail</h2>
+    <p>
+      Wenn Du mir eine E-Mail schreibst, werden Deine Angaben aus der E-Mail einschließlich der von Dir dort
+      angegebenen Kontaktdaten zwecks Bearbeitung Deiner Anfrage und für den Fall von Anschlussfragen bei mir
+      gespeichert. Diese Daten gebe ich nicht ohne Deine Einwilligung weiter.
+    </p>
+    <p>
+      Die Verarbeitung erfolgt auf Grundlage von <strong>Art. 6 Abs. 1 lit. b DSGVO</strong>, sofern Deine
+      Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen
+      erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf meinem berechtigten Interesse an der
+      effektiven Bearbeitung der an mich gerichteten Anfragen (<strong>Art. 6 Abs. 1 lit. f DSGVO</strong>) oder
+      auf Deiner Einwilligung (<strong>Art. 6 Abs. 1 lit. a DSGVO</strong>), sofern diese abgefragt wurde. Eine
+      erteilte Einwilligung kannst Du jederzeit mit Wirkung für die Zukunft widerrufen.
+    </p>
+    <p>
+      Die Daten verbleiben bei mir, bis Du mich zur Löschung aufforderst, Deine Einwilligung widerrufst oder der
+      Zweck der Datenspeicherung entfällt (etwa nach abgeschlossener Bearbeitung Deiner Anfrage). Zwingende
+      gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.
+    </p>
+
+    <!--
+      ============================================================================
+      VORBEREITET: Abschnitt für den Newsletter-Versand über Brevo.
+
+      Dieser Abschnitt ist bewusst noch auskommentiert, weil das Anmeldeformular
+      auf der Audiokurs-Seite derzeit KEINE Daten verarbeitet oder weiterleitet.
+
+      WICHTIG: In dem Moment, in dem das Formular an Brevo angebunden wird, muss
+      dieser Abschnitt aktiviert (Kommentarzeichen entfernt) und die Nummerierung
+      der folgenden Abschnitte angepasst werden. Zusätzlich sind dann nötig:
+        - Double-Opt-in in Brevo aktivieren
+        - Auftragsverarbeitungsvertrag mit Brevo abschließen
+        - Einwilligungs-Checkbox mit Link auf diese Seite ins Formular aufnehmen
+
+      <h2>X. Newsletter und Audiokurs-Anmeldung</h2>
+      <p>
+        Wenn Du Dich für den kostenfreien Audiokurs anmeldest, werden die von Dir im Anmeldeformular
+        eingegebenen Daten (Vorname und E-Mail-Adresse) an den Versanddienstleister Brevo übermittelt und dort
+        gespeichert. Anbieter ist die Sendinblue GmbH, Köpenicker Straße 126, 10179 Berlin (Brevo).
+      </p>
+      <p>
+        Die Anmeldung erfolgt im Double-Opt-in-Verfahren: Nach Deiner Anmeldung erhältst Du eine E-Mail, in der
+        Du die Anmeldung bestätigen musst. Damit wird sichergestellt, dass niemand mit einer fremden
+        E-Mail-Adresse angemeldet werden kann. Zur Nachweisbarkeit werden der Zeitpunkt der Anmeldung, der
+        Zeitpunkt der Bestätigung und die verwendete IP-Adresse gespeichert.
+      </p>
+      <p>
+        Rechtsgrundlage ist Deine Einwilligung nach <strong>Art. 6 Abs. 1 lit. a DSGVO</strong>. Du kannst diese
+        Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, etwa über den Abmeldelink am Ende jeder
+        E-Mail oder durch eine Nachricht an info@anke.one. Die Rechtmäßigkeit der bis zum Widerruf erfolgten
+        Verarbeitung bleibt vom Widerruf unberührt. Nach Deiner Abmeldung werden Deine Daten gelöscht.
+      </p>
+      <p>
+        Mit Brevo besteht ein Vertrag über Auftragsverarbeitung nach <strong>Art. 28 DSGVO</strong>.
+        Weitere Informationen: <a href="https://www.brevo.com/de/legal/privacypolicy/" target="_blank" rel="noopener noreferrer">brevo.com/de/legal/privacypolicy</a>
+      </p>
+      ============================================================================
+    -->
+
+    <h2>9. Künstliche Intelligenz</h2>
+    <p>
+      Auf dieser Website sind <strong>keine KI-Systeme eingebunden</strong>, die Deine Daten verarbeiten. Es gibt
+      insbesondere keinen KI-Chatbot, keine automatisierte Auswertung Deiner Eingaben und keine Übermittlung von
+      Besucherdaten an Anbieter von KI-Diensten. Bei der Erstellung der Website wurden KI-gestützte Werkzeuge
+      eingesetzt; dabei wurden keine personenbezogenen Daten von Besucherinnen und Besuchern verarbeitet.
+    </p>
+
+    <h2>10. Soziale Netzwerke</h2>
+    <p>
+      Auf dieser Website sind <strong>keine Social-Media-Plugins</strong> (etwa Like-Buttons oder eingebettete
+      Beiträge) eingebunden. Sollten an anderer Stelle Verlinkungen zu meinen Profilen in sozialen Netzwerken
+      gesetzt sein, werden Daten erst dann an den jeweiligen Anbieter übertragen, wenn Du den Link aktiv
+      anklickst. Für die Datenverarbeitung auf den verlinkten Plattformen ist der jeweilige Anbieter
+      verantwortlich.
+    </p>
+
+    <h2>11. Speicherdauer</h2>
+    <p>
+      Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben
+      Deine personenbezogenen Daten bei mir, bis der Zweck für die Datenverarbeitung entfällt. Wenn Du ein
+      berechtigtes Löschersuchen geltend machst oder eine Einwilligung widerrufst, werden Deine Daten gelöscht,
+      sofern keine anderen gesetzlich zulässigen Gründe für die Speicherung bestehen – etwa steuer- oder
+      handelsrechtliche Aufbewahrungsfristen. Im letzteren Fall erfolgt die Löschung nach Wegfall dieser Gründe.
+    </p>
+
+    <h2>12. Deine Rechte</h2>
+    <p>Dir stehen gegenüber mir folgende Rechte hinsichtlich der Dich betreffenden personenbezogenen Daten zu:</p>
+    <ul>
+      <li><strong>Auskunft</strong> über die zu Deiner Person gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO)</li>
+      <li><strong>Berichtigung</strong> unrichtiger oder Vervollständigung unvollständiger Daten (Art. 16 DSGVO)</li>
+      <li><strong>Löschung</strong> der zu Deiner Person gespeicherten Daten (Art. 17 DSGVO)</li>
+      <li><strong>Einschränkung der Verarbeitung</strong>, soweit die Daten aufgrund gesetzlicher Pflichten noch nicht gelöscht werden dürfen (Art. 18 DSGVO)</li>
+      <li><strong>Datenübertragbarkeit</strong>, also Herausgabe der von Dir bereitgestellten Daten in einem gängigen, maschinenlesbaren Format (Art. 20 DSGVO)</li>
+      <li><strong>Widerspruch</strong> gegen die Verarbeitung, soweit diese auf einem berechtigten Interesse beruht (Art. 21 DSGVO)</li>
+      <li><strong>Widerruf einer Einwilligung</strong> mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO)</li>
+    </ul>
+    <p>
+      Zur Ausübung dieser Rechte genügt eine formlose Nachricht an
+      <a href="mailto:info@anke.one">info@anke.one</a>.
+    </p>
+
+    <h3>Widerspruchsrecht</h3>
+    <p>
+      Wenn die Datenverarbeitung auf Grundlage von Art. 6 Abs. 1 lit. e oder f DSGVO erfolgt, hast Du jederzeit
+      das Recht, aus Gründen, die sich aus Deiner besonderen Situation ergeben, gegen die Verarbeitung Deiner
+      personenbezogenen Daten Widerspruch einzulegen. Ich verarbeite die betroffenen Daten dann nicht mehr, es
+      sei denn, ich kann zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Deine Interessen,
+      Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder
+      Verteidigung von Rechtsansprüchen.
+    </p>
+
+    <h3>Beschwerderecht bei der Aufsichtsbehörde</h3>
+    <p>
+      Im Falle von Verstößen gegen die DSGVO steht Dir ein Beschwerderecht bei einer Aufsichtsbehörde zu,
+      insbesondere in dem Mitgliedstaat Deines gewöhnlichen Aufenthaltsorts, Deines Arbeitsplatzes oder des Orts
+      des mutmaßlichen Verstoßes. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher
+      oder gerichtlicher Rechtsbehelfe.
+    </p>
+    <p>
+      Zuständige Aufsichtsbehörde für mich:
+      <span class="todo">Aufsichtsbehörde des Bundeslandes ergänzen</span>
+    </p>
+
+    <h2>13. Keine automatisierte Entscheidungsfindung</h2>
+    <p>
+      Eine automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von Art. 22 DSGVO findet nicht
+      statt.
+    </p>
+
+    <h2>14. Änderungen dieser Datenschutzerklärung</h2>
+    <p>
+      Ich passe diese Datenschutzerklärung an, sobald Änderungen an dieser Website oder an den eingesetzten
+      Diensten dies erforderlich machen – etwa wenn künftig ein Newsletter-Versand hinzukommt. Es gilt jeweils
+      die auf dieser Seite veröffentlichte Fassung.
+    </p>
+
+    <p class="meta">Stand: September 2026</p>
+  </div>
+
+  <nav class="page-nav">
+    <a href="/">Startseite</a>
+    <a href="/audiokurs">Audiokurs</a>
+    <a href="/impressum">Impressum</a>
+  </nav>
+</body>
+</html>

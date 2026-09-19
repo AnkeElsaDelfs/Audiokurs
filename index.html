@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mein Wort ist Erinnerung – Elsa &amp; Ella</title>
 <meta name="description" content="Bald findest Du hier die neue Seite von Elsa &amp; Ella. Bis dahin: der kostenfreie Audiokurs „Raus aus dem Drama“.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Beau+Rivage&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/fonts.css">
 <style>
   :root{
     --cream:        #F5EEDB;
@@ -138,6 +136,14 @@
     text-transform:uppercase;
     color:rgba(245,238,219,0.5);
   }
+  footer a{
+    color:rgba(245,238,219,0.7);
+    text-decoration:none;
+    border-bottom:1px solid rgba(238,223,176,0.3);
+    margin:0 8px;
+  }
+  footer a:hover{ color:var(--gold-bright); border-color:var(--gold-bright); }
+  footer .legal{ margin-top:14px; }
 </style>
 </head>
 <body>
@@ -159,7 +165,13 @@
 
     <a class="btn" href="/audiokurs">Zum Audiokurs</a>
 
-    <footer>&copy; 2026 Elsa &amp; Ella</footer>
+    <footer>
+      &copy; 2026 Elsa &amp; Ella
+      <div class="legal">
+        <a href="/impressum">Impressum</a>
+        <a href="/datenschutz">Datenschutz</a>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
